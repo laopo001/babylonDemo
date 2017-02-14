@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Chrome and new instance of Chrome",
+            "type": "chrome",
+            "request": "launch",
+            //"program":"${workspaceRoot}/123.js",
+            "url": "http://localhost:8080/index.html",
+            "sourceMaps": true,
+            "webRoot": "C:/Users/ldh/WebstormProjects/earth"
+        },
+        {
+            "name": "Attach to Chrome",
+            "type": "chrome",
+            "request": "attach",
+            "port": 9222,
+            "sourceMaps": true,
+            "webRoot": "${workspaceRoot}"
+        },{
+            "name": "server to Chrome",
+            "type": "node",
+            "request": "launch",
+            "sourceMaps": true,
+            "program":"${workspaceRoot}/server.js",
+        }
+    ]
+}

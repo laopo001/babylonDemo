@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "suppressImplicitAnyIndexErrors": true,
+     "removeComments": false,
+     "preserveConstEnums": false,
+     "noImplicitAny": false,
+     "types" : ["babylonjs"]
+ //    "typeRoots" : ["./typings"]
+  },
+
+  "include":["./ts/*.ts"], 
+ // "files": ["./ts/index.ts"],
+  "exclude": [
+    "node_modules"
+  ]
+}
