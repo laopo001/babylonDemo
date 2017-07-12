@@ -1,21 +1,31 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "lib": [
+      "es2015",
+      "dom"
+    ],
     "suppressImplicitAnyIndexErrors": true,
-     "removeComments": false,
-     "preserveConstEnums": false,
-     "noImplicitAny": false,
-     "types" : ["babylonjs"]
- //    "typeRoots" : ["./typings"]
+    //  "removeComments": false,
+    //  "preserveConstEnums": false,
+    "noImplicitAny": true,
+    "typeRoots": [
+      "./typings"
+    //  "./node_modules/@types"
+    ]
+    // "types": [
+    //   "babylonjs"
+    // ]
   },
-
-  "include":["./ts/*.ts"], 
- // "files": ["./ts/index.ts"],
+  "include": [
+    "./ts/*.ts"
+  ],
   "exclude": [
     "node_modules"
   ]

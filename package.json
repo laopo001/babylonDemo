@@ -2,7 +2,7 @@
   "name": "mygame",
   "version": "1.0.0",
   "description": "无",
-  "main": "__loading__.js",
+  "main": "",
   "scripts": {
     "start": "node ./server.js",
     "watch": "webpack --display-error-details --progress --colors --watch"
@@ -10,13 +10,11 @@
   "author": "ldh",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.14.0",
-    "browser-sync-webpack-plugin": "^1.1.2",
+    "browser-sync": "^2.18.12",
+    "browser-sync-webpack-plugin": "^1.2.0",
     "ts-loader": "^0.8.2",
-    "typescript": "^2.0.3",
-    "webpack": "^1.13.1"
+    "typescript": "^2.4.1",
+    "webpack": "^2.7.0"
   },
-  "dependencies": {
-    "@types/babylonjs": "^2.3.31"
-  }
+  "dependencies": {}
 }

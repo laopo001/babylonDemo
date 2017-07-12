@@ -42,15 +42,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const lib_1 = __webpack_require__(2);
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var lib_1 = __webpack_require__(1);
 	var canvas = document.getElementById('renderCanvas');
 	var engine = new BABYLON.Engine(canvas);
 	// This creates a basic Babylon Scene object (non-mesh)
 	var scene = new BABYLON.Scene(engine);
-	scene.clearColor = new BABYLON.Color3(0., 0., 0.); //初始化颜色
+	scene.clearColor = new BABYLON.Color4(0., 0., 0., 1); //初始化颜色
 	// scene.fogMode = BABYLON.Scene.FOGMODE_EXP;   //雾
 	// scene.fogDensity = 0.1;
 	// // scene.fogStart = 20.0;
@@ -95,12 +96,12 @@
 	});
 
 
-/***/ },
-/* 1 */,
-/* 2 */
-/***/ function(module, exports) {
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
 
 	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
 	* -创建坐标轴
 	* @param {Scene} scene
@@ -204,5 +205,5 @@
 	exports.CreateParticle = CreateParticle;
 
 
-/***/ }
+/***/ })
 /******/ ]);

@@ -8,7 +8,7 @@ module.exports = {
     },
     //入口文件输出配置
     output: {
-        path: 'build',
+        path: './build',
         filename: '[name].js'
     },
     //插件项
@@ -29,7 +29,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
+        extensions: ['','.ts', '.js']
     },
     // //其它解决方案配置
     // resolve: {
