@@ -1,14 +1,15 @@
 var webpack = require('webpack');
+var path = require('path')
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 module.exports = {
 
     //页面入口文件配置
     entry: {
-        index: './ts/index.ts'
+        index: './src/index.ts'
     },
     //入口文件输出配置
     output: {
-        path: './build',
+        path: path.resolve(__dirname, 'build'),
         filename: '[name].js'
     },
     //插件项
@@ -29,7 +30,7 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['','.ts', '.js']
+        extensions: ['.ts', '.js']
     },
     // //其它解决方案配置
     // resolve: {

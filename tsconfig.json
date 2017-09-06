@@ -16,15 +16,13 @@
     //  "preserveConstEnums": false,
     "noImplicitAny": true,
     "typeRoots": [
+      // "./node_modules/@types",
       "./typings"
-    //  "./node_modules/@types"
     ]
-    // "types": [
-    //   "babylonjs"
-    // ]
+    // "types" : ["babylonjs"]
   },
   "include": [
-    "./ts/*.ts"
+    "src"
   ],
   "exclude": [
     "node_modules"
