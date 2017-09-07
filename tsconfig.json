@@ -12,14 +12,10 @@
       "dom"
     ],
     "suppressImplicitAnyIndexErrors": true,
-    //  "removeComments": false,
-    //  "preserveConstEnums": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "typeRoots": [
-      // "./node_modules/@types",
-      "./typings"
+      "./node_modules/@types"
     ]
-    // "types" : ["babylonjs"]
   },
   "include": [
     "src"

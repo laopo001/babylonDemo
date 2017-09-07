@@ -5,7 +5,8 @@
   "main": "",
   "scripts": {
     "start": "node ./server.js",
-    "watch": "webpack --display-error-details --progress --colors --watch"
+    "watch": "webpack --display-error-details --progress --colors --watch",
+    "build": "webpack --display-error-details --progress --colors"
   },
   "author": "ldh",
   "license": "ISC",
