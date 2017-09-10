@@ -1,7 +1,7 @@
 /**
  * @author dadigua
  */
-import * as BABYLON from 'babylonjs';
+/// <reference path="../dist/babylon.d.ts" />
 
 /**
  * 创建坐标轴

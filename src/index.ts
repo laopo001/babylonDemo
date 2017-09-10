@@ -1,7 +1,7 @@
 /**
  * @author dadigua
  */
-import * as BABYLON from 'babylonjs';
+/// <reference path="../dist/babylon.d.ts" />
 import { CreateParticle, showAxis } from './lib';
 
 let canvas = <HTMLCanvasElement>document.getElementById('renderCanvas');
@@ -9,7 +9,8 @@ let engine = new BABYLON.Engine(canvas);
 
 // This creates a basic Babylon Scene object (non-mesh)
 let scene = new BABYLON.Scene(engine);
-scene.clearColor = new BABYLON.Color4(0., 0., 0., 0.);  // 初始化颜色
+scene.clearColor = new BABYLON.Color4(0., 0., 0., 1.);  // 初始化颜色
+scene.debugLayer.show();
 // scene.fogMode = BABYLON.Scene.FOGMODE_EXP;   //雾
 // scene.fogDensity = 0.1;
 // // scene.fogStart = 20.0;
@@ -36,9 +37,9 @@ let plane = BABYLON.Mesh.CreatePlane('plane', 10.0, scene, false, BABYLON.Mesh.D
 
 let dynamicTexture = new BABYLON.DynamicTexture('DynamicTexture', 100, scene, true);
 dynamicTexture.hasAlpha = true;
-dynamicTexture.drawText('XSS平台', 5, 75, 'bold 30px Arial', '#FFFFFF', 'transparent', true);
+dynamicTexture.drawText('XSS平台', 5, 75, 'bold 20px Arial', '#FFFFFF', 'transparent', true);
 
-//  let StandardMaterial = new BABYLON.StandardMaterial('TextPlaneMaterial', scene);
+// let StandardMaterial = new BABYLON.StandardMaterial('TextPlaneMaterial', scene);
 // StandardMaterial.backFaceCulling = false;
 // StandardMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
 // StandardMaterial.diffuseTexture = dynamicTexture;
