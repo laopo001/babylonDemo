@@ -1,7 +1,10 @@
 /**
+ * @license ISC
  * @author dadigua
  */
 /// <reference path="../dist/babylon.d.ts" />
+import {a} from './test';
+a();
 import { CreateParticle, showAxis } from './lib';
 
 let canvas = <HTMLCanvasElement>document.getElementById('renderCanvas');

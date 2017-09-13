@@ -21,7 +21,16 @@ module.exports = {
             host: 'localhost',
             port: 5000,
             server: { baseDir: [''] }
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            beautify: false,
+            output: {
+                comments: false
+            },
+            compress: {
+                warnings: false
+            }
+        }),
     ],
     module: {
         //加载器配置
