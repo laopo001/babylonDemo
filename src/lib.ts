@@ -9,7 +9,7 @@
  * @param {BABYLON.Scene} scene 
  * @param {number} size 
  */
-function showAxis(scene: BABYLON.Scene, size: number): void {
+export function showAxis(scene: BABYLON.Scene, size: number): void {
     function makeTextPlane(text, color, size) {
         let dynamicTexture = new BABYLON.DynamicTexture('DynamicTexture', 50, scene, true);
         dynamicTexture.hasAlpha = true;
@@ -46,7 +46,7 @@ function showAxis(scene: BABYLON.Scene, size: number): void {
     zChar.position = new BABYLON.Vector3(0, 0.05 * size, 0.9 * size);
 }
 
-function CreateParticle(fountain, scene) {
+export function CreateParticle(fountain, scene) {
     let particleSystem = new BABYLON.ParticleSystem('particles', 2000, scene);
 
     // Texture of each particle
@@ -122,4 +122,7 @@ function CreateParticle(fountain, scene) {
     fountain.animations.push(animation);
     scene.beginAnimation(fountain, 0, 100, true);
 }
-export { showAxis, CreateParticle };
+
+export function loadScene(){
+
+}
